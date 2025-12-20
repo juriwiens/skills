@@ -2,12 +2,28 @@
 
 Personal marketplace for Claude Code plugins by Juri Wiens.
 
+This repository serves as both:
+1. A **Claude Code plugin marketplace** for distributing plugins
+2. A **plugin** containing the library-docs-skill-creator skill
+
 ## Installation
 
-Add this marketplace to your Claude Code installation:
+### Add the marketplace
 
 ```bash
 /plugin marketplace add juriwiens/claude-plugins
+```
+
+### Install plugins from this marketplace
+
+```bash
+/plugin install library-docs-skill-creator@claude-plugins
+```
+
+Or install directly from this repository:
+
+```bash
+/plugin install juriwiens/claude-plugins
 ```
 
 ## Available Plugins
@@ -16,22 +32,42 @@ Add this marketplace to your Claude Code installation:
 
 Automated workflow for creating library documentation skills by researching GitHub repositories and generating structured skill files.
 
-**Install:**
-```bash
-/plugin install library-docs-skill-creator@claude-plugins
-```
-
 **Features:**
-- Automated repository discovery
-- Documentation structure analysis
-- Structured skill file generation
-- Support for multi-repo libraries
-- Template-based skill creation
+- Automated repository discovery and analysis
+- Documentation structure exploration
+- Template-based skill file generation
+- Support for multi-repo libraries (main, docs, examples, templates)
+- Adaptive to any repository structure
 
-**Triggers:**
+**Usage triggers:**
 - "Create a skill for [library name]"
-- "Generate documentation context for [framework]"
-- "Make a skill for [project]"
+- "Make a skill for [framework]"
+- "Generate documentation context for [library]"
+- "Research [library] docs structure"
+
+**What it does:**
+1. Uses AI exploration to discover repository structure
+2. Identifies documentation, examples, and key files
+3. Generates a complete SKILL.md following established patterns
+4. Provides templates and research guidelines
+
+## Repository Structure
+
+```
+claude-plugins/
+├── .claude-plugin/
+│   ├── marketplace.json    # Marketplace definition
+│   └── plugin.json         # Plugin manifest
+├── skills/
+│   └── library-docs-skill-creator/
+│       ├── SKILL.md        # Main skill file
+│       ├── .gitignore      # Excludes .repos/
+│       └── references/
+│           ├── skill_template.md    # Template for new skills
+│           └── research_guide.md    # Research methodology
+├── LICENSE
+└── README.md
+```
 
 ## License
 

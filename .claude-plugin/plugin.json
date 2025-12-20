@@ -1,0 +1,13 @@
+{
+  "name": "library-docs-skill-creator",
+  "description": "Automated workflow for creating library documentation skills by researching GitHub repositories and generating structured skill files",
+  "version": "1.0.0",
+  "author": {
+    "name": "Juri Wiens",
+    "email": "juriwiens@gmail.com"
+  },
+  "homepage": "https://github.com/juriwiens/claude-plugins",
+  "repository": "https://github.com/juriwiens/claude-plugins",
+  "license": "MIT",
+  "keywords": ["skills", "documentation", "libraries", "automation", "research"]
+}
