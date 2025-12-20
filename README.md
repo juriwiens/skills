@@ -76,6 +76,12 @@ To create a new skill:
 
 See [skills/library-docs-skill-creator](skills/library-docs-skill-creator) for a complete example.
 
+## References
+
+- [Agent Skills Standard](https://agentskills.io) - The open standard for AI agent skills
+- [agentskills/agentskills](https://github.com/agentskills/agentskills) - GitHub repository for the standard
+- [anthropics/skills](https://github.com/anthropics/skills) - Example skills from Anthropic
+
 ## License
 
 MIT
