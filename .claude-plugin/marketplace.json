@@ -1,27 +1,22 @@
 {
-  "name": "claude-plugins",
+  "name": "juri-wiens-skills",
   "owner": {
     "name": "Juri Wiens",
     "email": "juriwiens@gmail.com"
   },
   "metadata": {
-    "description": "Personal Claude Code plugin marketplace"
+    "description": "Personal skills collection",
+    "version": "1.0.0"
   },
   "plugins": [
     {
       "name": "library-docs-skill-creator",
-      "source": {
-        "source": "github",
-        "repo": "juriwiens/claude-plugins"
-      },
-      "description": "Automated workflow for creating library documentation skills by researching GitHub repositories and generating structured skill files. Use this skill when the user wants to create a new skill for a Python/JavaScript library or framework, needs to research a library's documentation structure, or wants to generate a skill file that provides comprehensive context through official code, documentation, and examples. Triggers include requests like \"create a skill for [library]\", \"make a skill for [framework]\", or \"research [library] docs structure\".",
-      "version": "1.0.0",
-      "author": {
-        "name": "Juri Wiens"
-      },
-      "homepage": "https://github.com/juriwiens/claude-plugins",
-      "license": "MIT",
-      "keywords": ["skills", "documentation", "libraries", "automation", "research"]
+      "description": "Automated workflow for creating library documentation skills by researching GitHub repositories and generating structured skill files",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/library-docs-skill-creator"
+      ]
     }
   ]
 }
