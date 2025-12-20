@@ -6,23 +6,23 @@ This repository contains custom skills that extend Claude Code's capabilities fo
 
 ## Installation
 
-### Add this skills marketplace
+### Step 1: Add the marketplace
+
+First, register this repository as a plugin marketplace:
 
 ```bash
 /plugin marketplace add juriwiens/skills
 ```
 
-### Install skills from this marketplace
+### Step 2: Install the skill
+
+Then install the specific skill from the marketplace:
 
 ```bash
 /plugin install library-docs-skill-creator@juri-wiens-skills
 ```
 
-Or install directly from this repository:
-
-```bash
-/plugin install juriwiens/skills
-```
+**Note:** The marketplace name `juri-wiens-skills` comes from the `name` field in `.claude-plugin/marketplace.json`.
 
 ## Available Skills
 
