@@ -52,9 +52,16 @@ description: Provides comprehensive context for developing with [Library] by hav
 
 ### 2. Source Repositories
 
-List of GitHub repositories with `.repos/` directory instructions
+List of GitHub repositories with `.repos/` directory instructions.
 
-Add a .gitignore in the skill directory containing `.repos/` to exclude it from version control.
+Create a `.repos/.gitignore` file with self-contained ignore rules:
+
+```
+*
+!.gitignore
+```
+
+This pattern keeps the `.repos/` directory self-contained - it manages its own ignoring, the skill root stays clean, and the directory is tracked via the .gitignore file itself.
 
 ### 3. Important Guidelines (Standard)
 
@@ -138,8 +145,11 @@ Create new skills at:
 ```
 .claude/skills/<library-name>/
 ├── SKILL.md
-└── .repos/ (created later when cloning repositories)
+└── .repos/
+    └── .gitignore    # Contains: *\n!.gitignore
 ```
+
+Always create the `.repos/.gitignore` file immediately when generating the skill, before any repositories are cloned.
 
 ## Example Workflow
 
