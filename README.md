@@ -51,20 +51,8 @@ Automated workflow for creating library documentation skills by researching GitH
 
 ## Repository Structure
 
-```
-skills/
-├── .claude-plugin/
-│   └── marketplace.json        # Marketplace definition
-├── skills/
-│   └── library-docs-skill-creator/
-│       ├── SKILL.md            # Main skill file
-│       ├── .gitignore          # Excludes .repos/
-│       └── references/
-│           ├── skill_template.md    # Template for new skills
-│           └── research_guide.md    # Research methodology
-├── LICENSE
-└── README.md
-```
+- `.claude-plugin/` - Marketplace configuration
+- `skills/` - Individual skill directories, each with a `SKILL.md`
 
 ## Creating Your Own Skills
 
