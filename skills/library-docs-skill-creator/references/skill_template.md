@@ -23,8 +23,8 @@ This skill references contents of local clones of the following {LIBRARY_DISPLAY
 <!-- - {EXAMPLES_REPO_URL} -->
 <!-- - {TEMPLATE_REPO_URL} -->
 
-Optimistically assume these repositories are already cloned into the [.repos](./.repos) directory. If you get Read errors, you have to clone them.
-If you are following github.com links, remember to use the local clones in the [.repos](./.repos) directory instead.
+Before exploring, verify the repositories exist in [.repos](./.repos), clone any missing ones, pull the latest, and checkout a specific version tag if needed (e.g., `git checkout v1.2.0`).
+When accessing or fetching content from these repositories, always use the local clones in [.repos](./.repos) instead of fetching from github.com.
 
 **Important:** When exploring {LIBRARY_DISPLAY_NAME} code:
 1. **Prefer checking the virtual environment first** - The installed {LIBRARY_DISPLAY_NAME} package in `.venv/` contains the actual code being used and may have local modifications or be a different version than the repository
