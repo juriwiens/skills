@@ -10,29 +10,13 @@
   },
   "plugins": [
     {
-      "name": "library-docs-skill-creator",
-      "description": "Automated workflow for creating library documentation skills by researching GitHub repositories and generating structured skill files",
+      "name": "juri-wiens-skills",
+      "description": "Personal skills collection including planning guidelines, library documentation skill creator, and code review via Codex CLI",
       "source": "./",
       "strict": false,
       "skills": [
-        "./skills/library-docs-skill-creator"
-      ]
-    },
-    {
-      "name": "planning",
-      "description": "Guidelines for planning code implementations - invoke when entering plan mode or before implementing a complex feature",
-      "source": "./",
-      "strict": false,
-      "skills": [
-        "./skills/planning"
-      ]
-    },
-    {
-      "name": "codex-review",
-      "description": "Run code review via Codex CLI",
-      "source": "./",
-      "strict": false,
-      "skills": [
+        "./skills/planning",
+        "./skills/library-docs-skill-creator",
         "./skills/codex-review"
       ]
     }
