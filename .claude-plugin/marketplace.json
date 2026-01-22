@@ -17,6 +17,24 @@
       "skills": [
         "./skills/library-docs-skill-creator"
       ]
+    },
+    {
+      "name": "planning",
+      "description": "Guidelines for planning code implementations - invoke when entering plan mode or before implementing a complex feature",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/planning"
+      ]
+    },
+    {
+      "name": "codex-review",
+      "description": "Run code review via Codex CLI",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/codex-review"
+      ]
     }
   ]
 }
