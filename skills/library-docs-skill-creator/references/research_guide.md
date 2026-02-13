@@ -57,6 +57,8 @@ gh api repos/<owner>/<repo>/contents/docs --jq '.[] | select(.name == "llms.txt"
 
 If found, these are excellent starting points for the skill's Overview section.
 
+**Important:** When the `llms.txt` or documentation site provides URLs, note whether they support direct markdown access (`.md` suffix). Many documentation sites (e.g., docs.langchain.com, mkdocs-based sites) serve raw markdown at `.md` URLs. Always prefer these in generated skills -- they are much more efficient for agents to fetch and process than HTML pages.
+
 ### 4. Discover Documentation Structure
 
 Explore how documentation is organized:

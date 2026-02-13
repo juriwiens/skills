@@ -120,6 +120,16 @@ Look for these common patterns:
 - `llms.txt` files optimized for LLM consumption
 - `README.md` as the primary overview
 
+### Documentation URL Format
+
+When linking to external documentation sites, **always prefer direct markdown URLs** (`.md` suffix) over human-readable HTML URLs. Many documentation sites (e.g., docs.langchain.com, mkdocs-based sites) serve raw markdown when you request the `.md` file directly. This is much more efficient for agents -- raw markdown instead of parsing HTML.
+
+Example:
+- **Prefer**: `https://docs.langchain.com/oss/javascript/deepagents/overview.md`
+- **Avoid**: `https://docs.langchain.com/oss/javascript/deepagents/overview`
+
+Check the site's `llms.txt` if available -- it typically lists URLs in the `.md` format already.
+
 ### Skill Customization
 
 Tailor the skill to the library's domain:

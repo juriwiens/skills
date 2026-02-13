@@ -49,6 +49,11 @@ Get an overview of {LIBRARY_DISPLAY_NAME} by reading the following files:
 <!-- 4. [Features Overview](./.repos/{DOCS_LOCATION}/features.md) -->
 
 <!--
+DOCUMENTATION URLs:
+When linking to external documentation sites, always use direct markdown URLs (.md suffix)
+where supported. This is much more efficient for agents than HTML pages.
+Example: https://docs.example.com/guide/topic.md instead of https://docs.example.com/guide/topic
+
 SECTION CUSTOMIZATION:
 Add library-specific sections below based on the documentation structure.
 
